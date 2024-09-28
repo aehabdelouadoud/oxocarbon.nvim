@@ -669,4 +669,8 @@
 (custom-set-face! :VimwikiLink [] {:link "markdownUrl"})
 (custom-set-face! :VimwikiCode [] {:link "markdownCode"})
 
+; mini-indentscope
+
+(custom-set-face! :MiniIndentscopeSymbol [] {:fg "#424242" :bg oxocarbon.none})
+
 { : oxocarbon }
