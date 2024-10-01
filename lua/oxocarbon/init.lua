@@ -13,7 +13,7 @@ local oxocarbon = (
 ((vim.o.background == "dark") and {
   base00 = base00, base01 = blend_hex(base00, base06, 0.085),
   base02 = blend_hex(base00, base06, 0.18),
-  base03 = blend_hex(base00, base06, 0.3),
+  base03 = blend_hex(base00, base06, 0.45),
   base04 = blend_hex(base00, base06, 0.82),
   base05 = blend_hex(base00, base06, 0.95),
   base06 = base06,
@@ -411,5 +411,14 @@ vim.api.nvim_set_hl(0, "VimwikiHeaderChar", {link = "markdownH1"})
 vim.api.nvim_set_hl(0, "VimwikiList", {link = "markdownListMarker"})
 vim.api.nvim_set_hl(0, "VimwikiLink", {link = "markdownUrl"})
 vim.api.nvim_set_hl(0, "VimwikiCode", {link = "markdownCode"})
+
+-- mini-indent
 vim.api.nvim_set_hl(0, "MiniIndentscopeSymbol", {fg = "#424242", bg = oxocarbon.none})
+
+-- Git signs
+vim.api.nvim_set_hl(0, "GitSignsAdd",    {fg = oxocarbon.base13, bg = oxocarbon.none})
+vim.api.nvim_set_hl(0, "GitSignsChange", {fg = oxocarbon.base15, bg = oxocarbon.none})
+vim.api.nvim_set_hl(0, "GitSignsDelete", {fg = oxocarbon.base10, bg = oxocarbon.none})
+
 return {oxocarbon = oxocarbon}
+

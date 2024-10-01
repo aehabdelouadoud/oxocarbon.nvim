@@ -673,4 +673,9 @@
 
 (custom-set-face! :MiniIndentscopeSymbol [] {:fg "#424242" :bg oxocarbon.none})
 
+; Git signs
+(custom-set-face! :GitSignsAdd [] {:fg oxocarbon.base13 :bg oxocarbon.none})
+(custom-set-face! :GitSignsChange [] {:fg oxocarbon.base15 :bg oxocarbon.none})
+(custom-set-face! :GitSignsDelete [] {:fg oxocarbon.base10 :bg oxocarbon.none})
+
 { : oxocarbon }
